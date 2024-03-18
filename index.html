@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paolo Acone portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <a name="home"></a>
+    
+        <nav class="page-header"> <!--HEADER-->
+            <div class="header-left"> 
+                <a href="#home"><img class="logo" src="/assets/img/logo-black.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-right"> 
+                <ul class="header-right">
+                    <li class="home"><a href="#home">Home</a></li>
+                    <li class="about"><a href="#about">About</a></li>
+                    <li class="works"><a href="/my-projects">Works</a></li>
+                    <li class="contact"><a href="#contact-me">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="main-content"> <!--MAIN CONTENT-->
+            <div class="profile-picture-container">
+                <img class="profile-picture" src="/assets/img/Image-removebg-preview.png" alt="profile foto">
+            </div>
+            <div class="bio-container">
+                <div class="bio-words-container">
+                    <div class="bio-title">
+                        <h1><em>Hi there, this is Paolo!</em></h1>
+                    </div>
+                    <div class="soft-skills">
+                        <p><ul>
+                                <li>Web developer</li>
+                                <li>Engineer</li>
+                                <li>Problem solver</li>
+                                <li>Traveller</li>
+                                <li>Dreamer</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="buttons-box">
+                        <a class="button contact-me-button" href="#contact-me">Contact Me</a>
+                        <a class="button learn-more-button" href="#about">More . .</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <a name="about"></a> <!--ABOUT ME-->
+        <section class="about-me-container">
+            <h1 class="about-title">A little more about me..</h1>
+            <div class="about-paragraphs">
+                <p class="about-p0">
+                    Italian, 30 y.o 
+                </p>
+                <p class="about-p1">
+                    After I got my Engineering degree in 2018 I moved to Australia, where I had the biggest change of my life. <br>
+                    Outside of my <em>Comfort Zone</em> I discovered myself able to adapt to any situation, from farming to cheffing. <br>
+                    The secret is been to put all my energies into a Can-Do attitude which became part of the “New-me”.
+                </p>
+                    
+                </p>
+                <p class="about-p2">
+                    I’m a traveller,
+                    backpacked Australia, South-East-Asia, Morocco for several months with just a cabin bag on my shoulders and my “bestie” at my side. <br>
+                    I love to discover, to explore, to learn.. the unknown. <br>
+                    I like the ocean, scuba divers since 2023 (but still a bit unconfident with sharks..)
+                </p>
+                <p class="about-p3">
+                    I’ve always been attracted about web developing world and now it’s the time to become a professional.
+                </p>
+                <p class="about-p4">
+                    Dreaming about a nomad life, working from anywhere.
+                </p>
+                <p class="aboutp-5">
+                    Cheers.
+                </p>
+            </div>
+        </section>
+
+        <a name="contact-me"></a>
+        <div class="contact-me-container">
+            <h1 class="contact-me-title">Contact Me</h1>
+
+            <form name="contact-me-form" action="" method="post" class="contact-me-form">
+                <div class="first-row">
+                    <div class="form-row">
+                        <label for="first-name" class="label fn-label">First Name</label>
+                        <input id="first-name" class="input fn-input" name="first-name" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name" class="label ln-label">Last Name</label>
+                        <input id="last-name" class="input ln-input" name="last-name" type="text" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="email" class="label email-label">Email</label>
+                    <input id="email" class="input email-input" name="email" type="email"
+                    placeholder="email@example.com" required>
+                </div>
+                <div class="form-row last-row">
+                    <label id="message" class="label mess-label" for="message">Message</label>
+                    <textarea placeholder="Write your text . ." class="input mess-input" name="message" id="message"></textarea>
+                </div>
+            </form>
+                <button id="button" type="email" name="submit" class="submit-button">Submit</button>
+        </div>
+
+        <footer class="page-footer">
+            <div class="social">
+                Follow me on:
+                <a href="https://www.facebook.com/paolo.acone/"><img class="social-icons icon-1" src="/assets/img/iconmonstr-facebook-3.svg" alt="link to facebook profile"></a>
+                <a href="https://www.instagram.com/paoloacone/?hl=it"><img class="social-icons" src="/assets/img/iconmonstr-instagram-13.svg" alt="link to instagram profile"></a>
+                <a href="#"><img class="social-icons" src="/assets/img/iconmonstr-github-3.svg" alt="link to github"></a>
+            </div>
+            
+        </footer>
+</body>
+</html>
