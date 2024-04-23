@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Portfolio developed for start2impact"/>
+    <meta property="og:title" content="Paolo's portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content="https://github.com/pacone11/My-portfolio-s2i/" />
+    <meta property="og:description" content="Il mio Portfolio - start2impact university project" />
+
     <title>My projects</title>
     
     <link rel="stylesheet" href="/assets/css/my-proj.css">
@@ -30,37 +37,44 @@
         </div>
     </nav>
     <a name="my-projects"></a>
-    <div class="container">
+    <div class="my-proj-container">
         <h1 class="title">My Projects</h1>
-        <h2 class="subtitle">Here you can find some of the projects I worked on</h2>    
+        <h2 class="subtitle">Here you can find some of the projects I worked on:</h2> 
+        <div class="work-icon-container">
+            <img class="work-in-progress-icon" src="/assets/img/danger-zone-svgrepo-com.svg" alt="">
+        </div>
+        <p>
+            <h3><strong>WORK IN PROGRESS...</strong></h3>
+        </p>
+
     </div>
 
     <a name="contact-me"></a>
     <div class="contact-me-container">
         <h1 class="contact-me-title">Contact Me</h1>
 
-        <form name="contact-me-form" action="" method="post" class="contact-me-form">
+        <form name="contact-me-form" id="contact-me-form" action="" method="post" class="contact-me-form">
             <div class="first-row">
                 <div class="form-row">
                     <label for="first-name" class="label fn-label">First Name</label>
-                    <input id="first-name" class="input fn-input" name="first-name" type="text" required>
+                    <input id="first-name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
                 </div>
                 <div class="form-row">
                     <label for="last-name" class="label ln-label">Last Name</label>
-                    <input id="last-name" class="input ln-input" name="last-name" type="text" required>
+                    <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" required>
                 </div>
             </div>
             <div class="form-row">
                 <label for="email" class="label email-label">Email</label>
-                <input id="email" class="input email-input" name="email" type="email"
+                <input id="email" class="input email-input" name="user_email" type="email"
                 placeholder="email@example.com" required>
             </div>
             <div class="form-row last-row">
                 <label id="message" class="label mess-label" for="message">Message</label>
-                <textarea placeholder="Write your text . ." class="input mess-input" name="message" id="message"></textarea>
+                <textarea placeholder="Type your text . ." class="input mess-input" name="message" id="message"></textarea>
             </div>
+                <button id="button" type="submit" name="submit" class="submit-button">Submit</button>
         </form>
-            <button id="button" type="email" name="submit" class="submit-button">Submit</button>
     </div>
 
     <footer class="page-footer">
