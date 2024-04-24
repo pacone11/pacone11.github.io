@@ -28,6 +28,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "RarNyd_bF4fOkp1xI",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -125,8 +135,8 @@
             <form name="contact-me-form" id="contact-me-form" action="" method="post" class="contact-me-form">
                 <div class="first-row">
                     <div class="form-row">
-                        <label for="first-name" class="label fn-label">First Name</label>
-                        <input id="first-name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
+                        <label for="user_name" class="label fn-label">First Name</label>
+                        <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
                     </div>
                     <div class="form-row">
                         <label for="last-name" class="label ln-label">Last Name</label>
@@ -134,17 +144,34 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <label for="email" class="label email-label">Email</label>
-                    <input id="email" class="input email-input" name="user_email" type="email"
+                    <label for="user_email" class="label email-label">Email</label>
+                    <input id="user_email" class="input email-input" name="user_email" type="email"
                     placeholder="email@example.com" required>
                 </div>
                 <div class="form-row last-row">
-                    <label id="message" class="label mess-label" for="message">Message</label>
-                    <textarea placeholder="Type your text . ." class="input mess-input" name="message" id="message"></textarea>
+                    <label for="message" id="message" class="label mess-label">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your text . ." class="input mess-input" required></textarea>
                 </div>
                     <button id="button" type="submit" name="submit" class="submit-button">Submit</button>
             </form>
         </div>
+
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-me-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_yrvlta1', 'contact_form', this)
+                        .then(res=>{
+                            document.getElementById("user_name").value = "";
+                            document.getElementById("last-name").value = "";
+                            document.getElementById("user_email").value = "";
+                            document.getElementById("message").value = "";
+                            console.log(res);
+                        alert("Message sent successfully!!")
+                    }).catch(err=>console.log(err));
+                });
+            }
+        </script>
         
         <footer class="page-footer">
             <div class="social">
@@ -153,6 +180,6 @@
                 <a href="https://www.instagram.com/paoloacone/?hl=it"><img class="social-icons" src="/assets/img/iconmonstr-instagram-13.svg" alt="link to instagram profile"></a>
                 <a href="https://github.com/pacone11"><img class="social-icons" src="/assets/img/iconmonstr-github-3.svg" alt="link to github"></a>
             </div>
-        </footer>
+        </footer>       
 </body>
 </html>
