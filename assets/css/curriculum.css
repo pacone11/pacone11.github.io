@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
+}
+
+html {
+    font-family: Montserrat, arial;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(85,96,91,0.8);
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.personal-summary{
+    padding: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+li{
+    list-style: none;
+}
