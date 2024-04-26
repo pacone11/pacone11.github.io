@@ -337,6 +337,7 @@ h1 {
 .page-header{
     padding-left: 7%;
     padding-right: 7%;
+    border: 1px solid red;
 }
 
     .main-content{
