@@ -42,7 +42,7 @@
     </script>
 </head>  
 <body>  
-        <nav class="page-header"> <!--HEADER-->
+        <nav class="page-header" aria-roledescription="page header"> <!--HEADER-->
             <div class="header-left"> 
                 <a href="#home"><img class="logo" src="/assets/img/logo-black.png" alt="logo">
                 </a>
@@ -57,7 +57,7 @@
             </div>
         </nav>
 
-        <section class="main-content" id="home"> <!--MAIN CONTENT-->
+        <section class="main-content" id="home" aria-roledescription="main content"> <!--MAIN CONTENT-->
             <div class="profile-picture-container">
                 <img class="profile-picture" src="/assets/img/profile-picture.png" alt="profile foto">
             </div>
@@ -84,7 +84,7 @@
             </div>
         </section>
 
-        <section class="about-me-container" id="about"> <!--SEZIONE ABOUT-->
+        <section class="about-me-container" id="about" aria-roledescription="about me section"> <!--SEZIONE ABOUT-->
             <h2 class="about-title">A little more about me..</h2>
             <div class="about-paragraphs">
                 <p class="about-p0">
@@ -123,27 +123,27 @@
                 </div>
             </div>
             <div class="cv-link">
-                <a class="button contact-me-button cv-button" href="/curriculum.html" target="_blank">Curriculum Vitae</a>
+                <a class="button contact-me-button cv-button" href="/curriculum.html" target="_blank" aria-label="link opens in a new tab">Curriculum Vitae</a>
             </div>
         </section>
 
-        <div class="contact-me-container" id="contact-me"><!--FORM-->
+        <div class="contact-me-container" id="contact-me" aria-roledescription="contact me form container"><!--FORM-->
             <h2 class="contact-me-title">Contact Me</h2>
             <form name="contact-me-form" id="contact-me-form" method="post" class="contact-me-form">
                 <div class="first-row">
                     <div class="form-row">
                         <label for="user_name" class="label fn-label">First Name</label>
-                        <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
+                        <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" aria-required="true" required>
                     </div>
                     <div class="form-row">
                         <label for="last-name" class="label ln-label">Last Name</label>
-                        <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" required>
+                        <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" aria-required="true" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="user_email" class="label email-label">Email</label>
                     <input id="user_email" class="input email-input" name="user_email" type="email"
-                    placeholder="email@example.com" required>
+                    placeholder="email@example.com" aria-required="true" required>
                 </div>
                 <div class="form-row last-row">
                     <label for="message" id="message-label" class="label mess-label">Message</label>

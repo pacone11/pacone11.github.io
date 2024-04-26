@@ -74,21 +74,21 @@
             <div class="first-row">
                 <div class="form-row">
                     <label for="user_name" class="label fn-label">First Name</label>
-                    <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
+                    <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" aria-required="true" required>
                 </div>
                 <div class="form-row">
                     <label for="last-name" class="label ln-label">Last Name</label>
-                    <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" required>
+                    <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" aria-required="true" required>
                 </div>
             </div>
             <div class="form-row">
                 <label for="user_email" class="label email-label">Email</label>
                 <input id="user_email" class="input email-input" name="user_email" type="email"
-                placeholder="email@example.com" required>
+                placeholder="email@example.com" aria-required="true" required>
             </div>
             <div class="form-row last-row">
                 <label id="message-label" class="label mess-label" for="message">Message</label>
-                <textarea placeholder="Type your text . ." class="input mess-input" name="message" id="message" required></textarea>
+                <textarea placeholder="Type your text . ." class="input mess-input" name="message" id="message" aria-required="true" required></textarea>
             </div>
                 <button id="button" type="submit" name="submit" class="submit-button">Submit</button>
         </form>
