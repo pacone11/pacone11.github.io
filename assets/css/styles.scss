@@ -115,25 +115,27 @@ h1 {
      .bio-title {
         margin-bottom: 3%;
         color: $first-color;
+        font-style: italic;
      }
 
      .soft-skills{
         li{
             list-style-type: none;
-            font-weight: 200;
             font-size: 1.6rem;
-        }
-        .li-first-block {
-            padding-left: 2%;
-            color: $fourth-color;
-        }
-        .li-second-block {
-            color: $third-color;
-            text-align: right;
-            padding-right: 2%;
             font-style: oblique;
         }
      } 
+     .li-first-block {
+        padding-left: 2%;
+        color: $fourth-color;
+        font-weight: 300;
+    }
+    .li-second-block {
+        color: $first-color;
+        text-align: right;
+        padding-right: 2%;
+        font-weight: 400;
+    }
 
 .buttons-box {
     display: flex;
@@ -156,9 +158,9 @@ h1 {
      .contact-me-button{
         margin-right: 6px;
         background-color: $first-color;
-        color: $fourth-color;
+        color: $third-color;
         &:hover {
-            background-color: $third-color;
+            background-color: $second-color;
             transform: scale(1.2);
             color: $first-color;
          }
@@ -170,6 +172,9 @@ h1 {
             color: $first-color;
             transform: scale(1.2);
          }
+     }
+     .cv-button:hover{
+        background-color: $third-color;
      }
 
  .cv-link{

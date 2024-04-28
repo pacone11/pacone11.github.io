@@ -113,22 +113,26 @@ h1 {
 .bio-title {
   margin-bottom: 3%;
   color: black;
+  font-style: italic;
 }
 
 .soft-skills li {
   list-style-type: none;
-  font-weight: 200;
   font-size: 1.6rem;
+  font-style: oblique;
 }
-.soft-skills .li-first-block {
+
+.li-first-block {
   padding-left: 2%;
   color: white;
+  font-weight: 300;
 }
-.soft-skills .li-second-block {
-  color: rgb(162, 167, 167);
+
+.li-second-block {
+  color: black;
   text-align: right;
   padding-right: 2%;
-  font-style: oblique;
+  font-weight: 400;
 }
 
 .buttons-box {
@@ -151,10 +155,10 @@ h1 {
 .contact-me-button {
   margin-right: 6px;
   background-color: black;
-  color: white;
+  color: rgb(162, 167, 167);
 }
 .contact-me-button:hover {
-  background-color: rgb(162, 167, 167);
+  background-color: rgb(85, 96, 91);
   transform: scale(1.2);
   color: black;
 }
@@ -165,6 +169,10 @@ h1 {
 .learn-more-button:hover {
   color: black;
   transform: scale(1.2);
+}
+
+.cv-button:hover {
+  background-color: rgb(162, 167, 167);
 }
 
 .cv-link {
