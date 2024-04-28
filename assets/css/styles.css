@@ -53,13 +53,11 @@ h1 {
   flex-wrap: wrap;
   list-style-type: none;
 }
-
 .header-right a {
   color: rgb(162, 167, 167);
   text-decoration: none;
   padding: 5px;
 }
-
 .header-right a:hover {
   background-color: rgb(162, 167, 167);
   color: black;
@@ -119,10 +117,18 @@ h1 {
 
 .soft-skills li {
   list-style-type: none;
-  padding-left: 2%;
   font-weight: 200;
   font-size: 1.6rem;
+}
+.soft-skills .li-first-block {
+  padding-left: 2%;
   color: white;
+}
+.soft-skills .li-second-block {
+  color: rgb(162, 167, 167);
+  text-align: right;
+  padding-right: 2%;
+  font-style: oblique;
 }
 
 .buttons-box {
@@ -138,30 +144,27 @@ h1 {
   cursor: pointer;
   text-decoration: none;
 }
+.button:hover {
+  transition: all 0.2s;
+}
 
 .contact-me-button {
   margin-right: 6px;
   background-color: black;
   color: white;
 }
-
-.learn-more-button {
-  color: white;
-}
-
 .contact-me-button:hover {
   background-color: rgb(162, 167, 167);
   transform: scale(1.2);
   color: black;
 }
 
+.learn-more-button {
+  color: white;
+}
 .learn-more-button:hover {
   color: black;
   transform: scale(1.2);
-}
-
-.button:hover {
-  transition: all 0.2s;
 }
 
 .cv-link {
@@ -272,7 +275,6 @@ h1 {
   margin-top: 20px;
   font-size: 1.2rem;
 }
-
 .submit-button:hover {
   transform: scale(1.2);
   transition: all 0.2s;

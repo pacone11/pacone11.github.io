@@ -58,22 +58,18 @@ h1 {
     font-size: 1.6rem;
     flex-wrap: wrap;
     list-style-type: none;
-}
-
-.header-right a {
+    a {
         color: $third-color;
         text-decoration: none;
         padding: 5px;
     }
-    
-    .header-right a:hover {
+    a:hover {
         background-color: $third-color;
         color: $first-color;
         border-radius: 7px;
         transition: background-color 0.25s, color 0.25s;
     }
-    
-
+}
 
 .main-content {
     font-family: $font-stack;
@@ -88,17 +84,17 @@ h1 {
     color: $fourth-color;
 }
 
-    .profile-picture-container {
+.profile-picture-container {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 30px;
     }
-        .profile-picture {
+    .profile-picture {
             max-height: 200px;
             max-width: 200px;
             opacity: 0.9;
-        }
+    }
 
     .bio-container {
         background-color: $second-color;
@@ -121,13 +117,23 @@ h1 {
         color: $first-color;
      }
 
-     .soft-skills li {
-        list-style-type: none;
-        padding-left: 2%;
-        font-weight: 200;
-        font-size: 1.6rem;
-        color: $fourth-color;
-     }
+     .soft-skills{
+        li{
+            list-style-type: none;
+            font-weight: 200;
+            font-size: 1.6rem;
+        }
+        .li-first-block {
+            padding-left: 2%;
+            color: $fourth-color;
+        }
+        .li-second-block {
+            color: $third-color;
+            text-align: right;
+            padding-right: 2%;
+            font-style: oblique;
+        }
+     } 
 
 .buttons-box {
     display: flex;
@@ -141,33 +147,31 @@ h1 {
     font-size: 1.6rem;
     cursor: pointer;
     text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s;
+     }
 }
 
      .contact-me-button{
         margin-right: 6px;
         background-color: $first-color;
         color: $fourth-color;
+        &:hover {
+            background-color: $third-color;
+            transform: scale(1.2);
+            color: $first-color;
+         }
         }
 
      .learn-more-button {
         color: $fourth-color;
+        &:hover {
+            color: $first-color;
+            transform: scale(1.2);
+         }
      }
 
-     .contact-me-button:hover {
-        background-color: $third-color;
-        transform: scale(1.2);
-        color: $first-color;
-     }
-
-     .learn-more-button:hover {
-        color: $first-color;
-        transform: scale(1.2);
-
-     }
-
-     .button:hover {
-        transition: all 0.2s;
-     }
  .cv-link{
     display: flex;
     justify-content: right;
@@ -201,11 +205,13 @@ h1 {
     margin-bottom: 10px;
 }
 
-.about-par img {
-    width: 20%;
-    max-width: 120px;
-    padding: 20px;
-}
+.about-par {
+    img {
+        width: 20%;
+        max-width: 120px;
+        padding: 20px;
+    }
+} 
 
 
 .contact-me-container {
@@ -276,12 +282,13 @@ h1 {
     padding: 6px 10px;
     margin-top: 20px;
     font-size: 1.2rem;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s;
+    }
 }
 
-.submit-button:hover {
-    transform: scale(1.2);
-    transition: all 0.2s;
-}
 .hidden-paragraph {
     color: $fourth-color;
     padding: 5px;
