@@ -31,8 +31,8 @@
     <meta property="twitter:description" content="My Portfolio - Paolo Acone Web Developer">
     <meta property="twitter:image" content="https://github.com/pacone11/pacone11.github.io/blob/main/assets/img/og_image.png">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
         (function() {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
@@ -57,16 +57,16 @@
             </div>
         </nav>
 
-        <section class="main-content" id="home" aria-label="main content"> <!--MAIN CONTENT-->
+        <section class="main-content" id="home" aria-roledescription="main content"> <!--MAIN CONTENT-->
             <div class="profile-picture-container">
                 <img class="profile-picture" src="/assets/img/profile-picture.png" alt="profile foto">
             </div>
-            <div class="bio-container" aria-label="container for the main article">
+            <div class="bio-container" aria-roledescription="container for the main article">
                 <div class="bio-words-container">
-                    <div class="bio-title" aria-label="title of the main content">
+                    <div class="bio-title" aria-roledescription="title of the main content">
                         <h1><em>Hi there, this is <span class="my-name">Paolo!</span></em></h1>
                     </div>
-                    <div class="soft-skills" aria-label="list of soft skills">
+                    <div class="soft-skills" aria-roledescription="list of soft skills">
                         <ul>
                             <li>Web developer</li>
                             <li>Engineer</li>
@@ -153,7 +153,7 @@
             </form>
         </div>
 
-        <script type="text/javascript">
+        <script>
             window.onload = function() {
                 document.getElementById('contact-me-form').addEventListener('submit', function(event) {
                     event.preventDefault();

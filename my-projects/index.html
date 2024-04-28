@@ -29,8 +29,8 @@
     <meta property="twitter:image" content="https://github.com/pacone11/pacone11.github.io/blob/main/assets/img/og_image.png">
      
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
         (function() {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
@@ -92,7 +92,7 @@
                 <button id="button" type="submit" name="submit" class="submit-button">Submit</button>
         </form>
     </div>
-    <script type="text/javascript">
+    <script>
         window.onload = function() {
             document.getElementById('contact-me-form').addEventListener('submit', function(event) {
                 event.preventDefault();
